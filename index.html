@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="menu">
+      <nav>
+        <a style="animation-delay: 0.2s" href="http://127.0.0.1:5500/week7_0329/index.html" target="_blank">關於我</a>
+        <a style="animation-delay: 0.3s"href="http://127.0.0.1:5500/week7.20230329/index.html" target="_blank">我的作品</a>
+        <a style="animation-delay: 0.4s"href="http://127.0.0.1:5500/0524/index.html" target="_blank">我的履歷</a>
+        <a style="animation-delay: 0.5s"href="https://youtu.be/vVvsFttTB9Q" target="_blank">教學影片</a>
+        <a style="animation-delay: 0.5s"href="http://localhost:50000/" target="_blank">測驗題</a>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>

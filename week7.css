@@ -1,0 +1,49 @@
+@charset "UTF-8";
+* {
+  border: solid 2px black;
+  font-family: 微軟正黑體;
+  font-size: 20px;
+}
+
+html, body {
+  background-color: #ff123f;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 380px;
+  background-color: #fff;
+}
+
+.top {
+  height: 330px;
+  background-image: url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
+  background-size: cover;
+  position: relative;
+}
+.top .name {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  margin: 0px;
+  padding: 5px 15px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+.top .smalltext {
+  font-size: 14px;
+}
+.top .circlebtn {
+  width: 50px;
+  height: 50px;
+  background-color: #ff7526;
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  border-radius: 50%;
+}

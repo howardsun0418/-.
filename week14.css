@@ -1,0 +1,135 @@
+*{
+    border: solid 1px black;
+}
+body{
+    padding: 50px;  /*產生與body的內距*/
+    display: flex;
+    justify-content: center; /*左右致中*/
+    background-color: #02005b;
+    color: white;
+    font-size: 15px;
+    line-height:28px;
+    letter-spacing: 1px;
+    font-family :"微軟正黑體","sans-serif";
+
+}
+.resume{
+      display: flex;
+      max-width:950px;
+      height: 100%;
+      border: solid 8px #ffffff;
+      height:fit-content;  /*高度充滿內容*/
+      padding: 50px;
+      position:relative;
+}
+ .left{
+    flex: 5;
+ }
+ .right{
+    flex: 7;
+ }
+ .left, .right{
+    padding: 15px;
+ }
+ .left{
+    padding-right :50px;
+    border: solid 1px #FF7168
+ }
+ .right{
+    padding-left:50px;
+    padding-top: 150px;
+ }
+ ul{
+    list-style: none;
+    padding: 0px;
+ }
+    h2{
+       margin:0;
+       margin-bottom:25px;
+       font-weight: 400; 
+    }
+    h4{
+        margin:0;
+        margin-bottom:25px ;
+        opacity: 0.8;
+        font-weight: 400;     
+    }
+    h2::after{
+        content:"";
+        display:inline-block;
+        width:20px ;
+        height: 8px;
+        background-color: rgb(208, 137, 164);
+        margin-left:10px ;
+    }
+    .decoration{
+       width: 300px;
+       height: 140px;
+       background-color: #fff ;
+       background: linear-gradient(100deg,#FF5f5f, #ffffae);  /*右上物件漸層設定(to top是漸層方向)*/
+       border-radius: 70px 0 0 70px; /*畫圓弧設定*/
+       position: absolute;  /*漸層物件位置*/
+       right: 0;
+       top :50px;
+
+          }
+          .listexperience li{
+            display: flex;
+          }
+
+          .listexperience>li:nth-child(1) ul{  /*代表第1個li下的ul*/
+            border-color: #ff7168;
+          }
+
+          .listexperience>li:nth-child(2) ul{  /*代表第2個li下的ul*/
+            border-color: #ffA582;
+          }
+
+          .listexperience>li:nth-child(3) ul{  /*代表第3個li下的ul*/
+            border-color: #ffb087;
+          }
+
+          .listexperience>li:nth-child(4) ul{  /*代表第4個li下的ul*/
+            border-color: #ffde9e;
+          }
+
+          .listexperience li ul{
+            margin-left: 10px;
+            padding-left: 10px;
+            border: solid 1px white;
+          } 
+          .circle{
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50% 50%;
+            position:relative;
+            overflow: hidden; /*超出的範圍隱藏*/
+          }
+          .p90,.p180,.p270,.p360{
+            width: 25px;
+            height: 25px;
+            background-color:#ff7168;
+            position: absolute;
+            left:50%;
+            top: 0;
+          }
+          .p180{  /*右下角方框*/
+            top: 50%;
+          }
+          .p270{  /*左下角方框*/
+            left: 0;
+            top: 50%;
+          }
+          .p360{  /*左上角方框*/
+            left: 0;
+            top: 0;
+          }
+          .circle::after{
+            content:""; /**/
+            background-color: #02005b;
+            width:calc(100%-20px); /*計算全圓(100%)檢調左右各10px*/
+            height:calc(100%-20px);
+
+          }
+
